@@ -1,0 +1,232 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+/* html body here */
+body {
+    margin: 0;
+    background-image: url("thibault-mokuenko-i5k6oWSHhJc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Navigation Bar At Top of Screen */
+.navBar {
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 10px 40px rgb(255, 255, 255);
+    text-align: center;
+    font-family: Lemon;
+    color: aliceblue;
+    border-radius: 0px 0px 16px 16px;
+    position: fixed;
+    z-index: 1;
+}
+
+    /* The Menu */
+
+    .popUpMenu {
+        width: 10vh;
+        height: 40vh;
+        font-size: large;
+        float: right;
+        top: 0;
+        right: 0;
+        font-family: Lemon;
+        text-decoration: none;
+        position: fixed;
+        z-index: 1;
+    }
+    .boxOneHome:hover {
+    color: aquamarine !important;
+    }
+    
+    .boxOne {
+        width: 10vh;
+        height: 10vh;
+
+        background-color: rgb(77, 77, 77);
+        top: 0;
+        right: 0;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        border-radius: 0px 0px 16px 0px;
+        transition: border-radius 1s;
+        position: relative;
+    }
+    
+    .boxOneContents {
+        width: 10vh;
+        height: 0vh;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+        border-top: inset black;
+        transition: height 2s;
+
+
+
+    }
+    
+    .boxOneContentsText {
+        text-decoration: none;
+        color: black;
+        font-size: 1px;
+        transition: font-size 2s;
+        padding: 4px;
+    }
+    .boxOneContentsText:hover{
+        color: aquamarine;
+    }
+    .popUpMenu:hover .boxOneContentsText {
+     font-size: 75%;
+    }
+    
+    .boxOneContents:nth-child(3) {
+        border-radius: 0px 0px 0px 16px;
+    }
+    
+    /* Hover for transition for boxOneContents */
+    .popUpMenu:hover .boxOneContents {
+     
+        visibility: visible;
+        height: 7vh;
+}
+    
+    /* Round Corner Transition */
+    
+    .popUpMenu:hover .boxOne {
+        border-radius: 0px;
+    }
+
+    /* TEXT BOX SECTION */
+
+    .mainBody {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 20vh; 
+        font-family: 'Secular One', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    .aboutSection {
+        width: 60%;
+        height: auto;
+        backdrop-filter: blur(40px);
+        color: black;
+        text-align: center;
+        border-radius: 16px;
+        box-shadow: 20px 20px 40px rgb(255, 255, 255);
+        margin-bottom: 7vh;
+        padding: 0px 20px 20px 20px;
+        display: block;
+    }
+    
+    .secondSection {
+        width: 60%;
+        height: auto;
+        backdrop-filter: blur(40px);
+        color: black;
+        text-align: center;
+        border-radius: 16px;
+        box-shadow: 20px 20px 40px rgb(255, 255, 255);
+        margin-bottom: 7vh;
+        padding: 0px 20px 20px 20px;
+        display: block;
+    }
+    
+    .lastSection {
+        width: 60%;
+        height: auto;
+        backdrop-filter: blur(40px);
+        color: black;
+        text-align: center;
+        border-radius: 16px;
+        box-shadow: 20px 20px 40px rgb(255, 255, 255);
+        display: block;
+        position: relative;
+        padding: 0px 20px 20px 20px;
+        margin-bottom: 10vh;
+    }
+    .podcastImage {
+        border-radius: 15px;
+        width: 20%;
+    }
+
+    /* THE FOOTER */
+ .bottomNavBar {
+    width: 100%;
+    height: 4vh;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+ }
+
+ /* MEDIA QUERIES */
+
+ @media only screen and (max-width: 500px) {
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 116%;
+    }
+    h2 {
+        font-size: 120%;
+    }
+    p {
+        font-size: 90%;
+    }
+    .navBar {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .podcastImage {
+        width: 50%;
+    }
+    .bottomNavBar {
+        font-size: 12px;
+    }
+    .boxOneHome {
+        font-size: 14px;
+    }
+
+    
+ }
+
+ /* PODCASTS PAGE  */
+    .imagesLinks {
+        width: 100px;
+ }
+
+ 
+ .contactForm {
+    width: 90%;
+    height: 40vh;
+    border: none;
+ }
